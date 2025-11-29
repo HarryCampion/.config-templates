@@ -15,7 +15,7 @@ jobs:
     name: Build Devcontainer Image
     uses: ./.github/workflows/_devcontainer.yml
     with:
-      publish: false
+      publish: true
       registry: ghcr.io
       image_name: "devcontainer"
       image_tags: ${{ github.ref_name }}
